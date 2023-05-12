@@ -89,7 +89,7 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: export ARM_CLIENT_ID=${{ secrets..APP }};export ARM_CLIENT_SECRET=${{ secrets.SECRET }};export ARM_TENANT_ID=${{ secrets.TENANT }};export ARM_SUBSCRIPTION_ID=${{ secrets.SUBS }} && terraform plan
+      run: export ARM_CLIENT_ID=${{ secrets.APP }};export ARM_CLIENT_SECRET=${{ secrets.SECRET }};export ARM_TENANT_ID=${{ secrets.TENANT }};export ARM_SUBSCRIPTION_ID=${{ secrets.SUBS }} && terraform plan
       #run: export ARM_CLIENT_ID=${{ secrets.APP }};export ARM_CLIENT_SECRET=${{ secrets.SECRET }};export ARM_TENANT_ID=${{ secrets.TENANT }};export ARM_SUBSCRIPTION_ID=${{ secrets.SUBS }}
        
       # On push to main, build or change infrastructure according to Terraform configuration files
