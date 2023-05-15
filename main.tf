@@ -3,7 +3,7 @@ provider "azurerm" {
     
 }
 
-module "terraform-azurerm-rg" {
+module "terraform-azurerm-vnet" {
     #source = "git::https://github.com/shivramsingh13/terraform-azurerm-rg.git"
     source = "git::https://github.com/shivramsingh13/terraform-azurerm-vnet.git"
     
