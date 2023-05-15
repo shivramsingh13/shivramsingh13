@@ -3,11 +3,10 @@ provider "azurerm" {
     
 }
 
-module "terraform-azurerm-vnet" {
-    source = "git::https://github.com/shivramsingh13/terraform-azurerm-vnet.git"
+module "terraform-azurerm-storage" {
+    source = "git::https://github.com/shivramsingh13/terraform_azurerm_storage."
     
-    rg_name = "rg-1"
+    rg_name = "rg-3"
     location = "east us"
-    vnet_name = "vnet-1"
-    subnet_name = "subnet-1"
+    sa_name = "shiv12345"
 }
