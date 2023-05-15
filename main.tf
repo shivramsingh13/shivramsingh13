@@ -4,7 +4,7 @@ provider "azurerm" {
 }
 
 module "terraform-azurerm-storage" {
-    source = "git::https://github.com/shivramsingh13/terraform_azurerm_storage."
+    source = "git::https://github.com/shivramsingh13/terraform_azurerm_storage"
     
     rg_name = "rg-3"
     location = "east us"
