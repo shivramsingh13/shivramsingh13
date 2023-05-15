@@ -4,8 +4,8 @@ provider "azurerm" {
 }
 
 module "terraform-azurerm-rg" {
-    source = "git::https://github.com/shivramsingh13/terraform-azurerm-rg.git"
+    source = "git::https://github.com/shivramsingh13/terraform"
     
-    rg_name = "rg-1"
+    rg_name = "xyz"
     location = "east us"
 }
