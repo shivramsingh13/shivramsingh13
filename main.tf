@@ -8,6 +8,6 @@ module "terraform-azurerm-vnet" {
     
     rg_name = "rg-1"
     location = "east us"
-    vnet-name = "vnet-1"
-    subnet-name = "subnet-1"
+    vnet_name = "vnet-1"
+    subnet_name = "subnet-1"
 }
