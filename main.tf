@@ -3,9 +3,11 @@ provider "azurerm" {
     
 }
 
-module "terraform-azurerm-rg" {
-    source = "git::https://github.com/shivramsingh13/terraform"
+module "terraform-azurerm-vnet" {
+    source = "git::https://github.com/shivramsingh13/terraform-azurerm-vnet.git"
     
-    rg_name = "xyz"
+    rg_name = "rg-1"
     location = "east us"
+    vnet_name = "vnet-1"
+    subnet_name = "subnet-1"
 }
