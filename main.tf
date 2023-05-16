@@ -3,10 +3,17 @@ provider "azurerm" {
     
 }
 
-module "terraform-azurerm-storage" {
-    source = "git::https://github.com/shivramsingh13/terraform_azurerm_storage.git"
+module "terraform-azurerm-VM" {
+    source = "git::https://github.com/shivramsingh13/terraform_azurerm_VM.git"
     
-    rg_name = "rg-3"
+    rg_name = "rg-1"
     location = "east us"
-    sa_name = "shiv12345"
+    vm_name = "vm-1"
+    vnet_name = "vnet-1"
+    subnet_name = "subnet-1"
+    public_name = "public_ip"
+    nic_name = "nic-1"
+    os_disk_name = "os_disk_name-1"
+    data_disk_name = "data_disk_name-1"
+
 }
