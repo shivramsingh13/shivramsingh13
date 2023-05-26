@@ -3,11 +3,7 @@ provider "azurerm" {
     
 }
 
-module "terraform-azurerm-vnet" {
-    source = "git::https://github.com/shivramsingh13/terraform-azurerm-vnet.git"
+module "terraform-applicationgetway" {
+    source = "git::https://github.com/shivramsingh13/terraform-applicationgetway.git"
     
-    rg_name = "rg-1"
-    location = "east us"
-    vnet_name = "vnet-1"
-    subnet_name = "subnet-1"
 }
